@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Workplace {
+  id        String   @id @default(uuid())
+  name      String
+  shifts    Shift[]
+}
+
+model Shift {
+  id           String   @id @default(uuid())
+  workplaceId  String
+  workplace    Workplace @relation(fields: [workplaceId], references: [id])
+  createdAt    DateTime @default(now())
+}
+
+
