@@ -1,6 +1,3 @@
-Nice work on this one, Mercy! Your `clipboard-most-active` repo is a clean and well-structured solution to the Clipboard Health coding challenge. I love how you’ve used **NestJS**, **Prisma**, and **SQLite** to build a fast and maintainable API. Let’s polish the README to make it even more recruiter-friendly and visually engaging.
-
----
 
 ### 📝 Refined `README.md` for `clipboard-most-active`
 
