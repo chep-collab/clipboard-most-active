@@ -1,78 +1,119 @@
+Nice work on this one, Mercy! Your `clipboard-most-active` repo is a clean and well-structured solution to the Clipboard Health coding challenge. I love how you’ve used **NestJS**, **Prisma**, and **SQLite** to build a fast and maintainable API. Let’s polish the README to make it even more recruiter-friendly and visually engaging.
+
+---
+
+### 📝 Refined `README.md` for `clipboard-most-active`
+
+```markdown
 # 📊 Clipboard Health – Most Active Workplaces API
 
-This is a clean and optimized solution for Clipboard Health’s coding challenge:
-> Fetch and return the most active workplaces based on shift count.
-
-Built using **NestJS**, **Prisma**, and **SQLite**.
+A clean and optimized solution for Clipboard Health’s coding challenge. This API fetches and returns the most active workplaces based on shift count, built with **NestJS**, **Prisma**, and **SQLite**.
 
 ---
 
-## 🧠 Challenge Description
+## ✨ Features
 
-Given workplaces and their associated shifts, build an API that:
-
-- Counts shifts per workplace ✅
-- Returns only workplaces with at least one shift ✅
-- Sorts by most active (most shifts) ✅
-- Limits results (default: top 5) ✅
+- ✅ Counts shifts per workplace
+- ✅ Filters workplaces with at least one shift
+- ✅ Sorts by most active (highest shift count)
+- ✅ Limits results (default: top 5)
+- 🧪 Includes test coverage and seed data
 
 ---
 
-## 🚀 How to Run Locally
+## 🛠 Tech Stack
 
-### 1. Clone the project
+| Technology   | Purpose                     |
+|--------------|-----------------------------|
+| NestJS       | Backend framework           |
+| Prisma ORM   | Database modeling & queries |
+| SQLite       | Lightweight local database  |
+| TypeScript   | Type safety and scalability |
+
+---
+
+## 📦 Project Structure
+
+```
+clipboard-most-active/
+├── prisma/           # Prisma schema and migrations
+├── src/              # Main application logic
+│   ├── modules/      # Feature modules
+│   ├── main.ts       # Entry point
+├── test/             # Unit and integration tests
+├── README.md         # Project documentation
+├── package.json      # Dependencies and scripts
+```
+
+---
+
+## ⚙️ Getting Started
+
+### Clone the repo
 
 ```bash
-git clone https://github.com/your-username/clipboard-most-active.git
+git clone https://github.com/chep-collab/clipboard-most-active.git
 cd clipboard-most-active
 ```
 
-### 2. Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Set up Prisma and DB
+### Set up Prisma and database
 
 ```bash
 npx prisma migrate dev --name init
 npx prisma generate
 ```
 
-### 4. (Optional) Seed test data
+### (Optional) Seed test data
 
 ```bash
 npm run seed
 ```
 
-### 5. Run the app
+### Run the app
 
 ```bash
 npm run start
 ```
 
-### 6. Test the API
+### Test the API
 
-Visit:
-```
-http://localhost:3000/workplaces/most-active
-```
+Visit: `http://localhost:3000/workplaces/most-active`
 
 ---
 
-## 🛠 Tech Stack
+## 📸 Screenshots
 
-- [NestJS](https://nestjs.com/)
-- [Prisma ORM](https://www.prisma.io/)
-- [SQLite](https://www.sqlite.org/)
-- TypeScript
+
+
+
+## 📌 Roadmap
+
+- [ ] Add pagination and filtering options
+- [ ] Integrate Swagger for API docs
+- [ ] Add Docker support
+- [ ] Deploy to Render or Railway
 
 ---
 
-## 🙋🏽‍♀️ Author
+## 👤 Author
 
-**Mercy Chepngeno**  
+Mercy Chepngeno 
+[GitHub Profile](https://github.com/chep-collab)
+
+---
+
+## 📄 License
+
+MIT
+```
+
+
 [LinkedIn](https://linkedin.com/in/mercy-chepngeno-48b72920a) • [GitHub](https://github.com/chep-collab)
 
 ---
